@@ -17,7 +17,7 @@ public class PersonWS {
 	@Inject
 	private PersonDao personDao;
 
-	@WebResult(name = "entities")
+	@WebResult(name = "persons")
 	public List<Person> getAllPersons() {
 		return personDao.getAll();
 	}
